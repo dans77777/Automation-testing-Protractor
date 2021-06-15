@@ -7,7 +7,23 @@ let homepage= function(){
  this.get= function(url){
 browser.get(url);
  };
+ this.enternum1= function(no1){
+    num1_input.sendKeys(no1);
+};
+this.enternum2= function(no2){
+    num2_input.sendKeys(no2);
+}
+this.clickGo=function(){
+   gobutton.click();
+};
+
+
+this.verifyResult= function(result){
  
+   let output= element(by.cssContainingText('.ng-binding', result)); 
+   expect(output.getText()).toEqual(result); 
+}
+
 
 
 };
