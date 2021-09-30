@@ -12,7 +12,7 @@ homepage.get('http://juliemr.github.io/protractor-demo/');
 //    let result= element(by.cssContainingText('.ng-binding', '10')); 
 //    expect(result.getText()).toEqual('10'); 
    //to see shortcuts to use protractor snippets use vscode protractor snippets 
-
+ //to see shortcuts to use protractor snippets use vscode protractor snippets
 
    homepage.enternum1('10');
    homepage.enternum2('11');

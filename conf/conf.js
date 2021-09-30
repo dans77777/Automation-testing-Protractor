@@ -7,15 +7,17 @@ var reporter = new HtmlScreenshotReporter({
 });
 
 exports.config = {
-  directConnect: true,
-
-  // Capabilities to be passed to the webdriver instance.
+  //seleniumAddress: 'http://localhost:4444/wd/hub',
+  //directConnect: true,
+  specs: ['todo-spec.js'],
+  
   capabilities: {
-    'browserName': 'chrome'
+      'browserName': 'chrome',
+  
   },
-
-  // Framework to use. Jasmine is recommended.
+  useAllAngular2AppRoots: true,
   framework: 'jasmine',
+  
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
